@@ -30,3 +30,16 @@ puts 45628 * 7839
 puts "45628 * #{7839}"
 
 puts (true && false) || (false && true) || !(false && false)
+
+myvar = 'myvar is now this string'
+myvar # myvar is now this string
+
+amount = 20
+new_amount = amount
+new_amount #20
+amount = "twenty"
+amount # "twenty"
+new_amount #20
+
+variable #undefined local variable or method 'variable for main:Object'
+variable = variable || default value
