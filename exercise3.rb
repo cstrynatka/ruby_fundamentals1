@@ -41,6 +41,12 @@ unless x == 10
 	puts "I get printed!"
 end
 
+counter = 3
+until counter == 0
+	puts "Counter currently at #{counter}."
+	counter -=1
+end
+
 while true
 	puts "I'm an infinite loop"
 end
