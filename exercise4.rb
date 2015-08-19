@@ -18,3 +18,10 @@ puts ("And everything else in between is printed as a number")
 		puts i
 	end
 end
+
+1.upto 100 do |i|
+	string = " "
+	string += "Bit" if i % 3 == 0
+	string += "Maker" if i & 5 == 0
+	puts "#{i} = #{string}"
+end
