@@ -41,19 +41,9 @@ unless x == 10
 	puts "I get printed!"
 end
 
-counter = 3
-until counter == 0
-	puts "Counter currently at #{counter}."
-	counter -=1
-end
+5.times {puts "Chunky bacon"}
 
-while true
-	puts "I'm an infinite loop"
-end
-
-counter = 1
-
-while counter < 4
-	puts "Counter currently at #{counter}"
-	counter += 1 #Increment the counter
+one_to_ten = (1..10)
+one_to_ten.each do |num|
+	print (num**2).to_s + " "
 end
