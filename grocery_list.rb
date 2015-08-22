@@ -10,4 +10,5 @@ grocery_list.include?("bananas")
 
 grocery_list << "bananas"
 
-grocery_list.include?
+grocery_list.include?ºø
+
