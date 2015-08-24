@@ -1,7 +1,9 @@
-require_relative "contact.CRB"
+require_relative 'rolodex.rb'
+require_relative 'contact.rb'
 
 class Contact
 attr_accessor :first_name, :last_name, :email, :notes
+attr_reader :id
 
 def self.run(name)
 	crm = new(name)
