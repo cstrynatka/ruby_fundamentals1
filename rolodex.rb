@@ -1,20 +1,23 @@
 require_relative('contact.rb')
 
 class Rolodex
-@@id == 1000 # double @@ means it's a class variable, not an instance variable
+	attr_reader :contacts
 
-def initialize
-	@contats = [] #empty array to start out
+
+	def initialize
+		@contacts = [] #empty array to start out
+		@id = 1000 
 	end
 
-	def add_contact(first_name, last_name, email, note)
-		contact = Contact.new(@@id, first_name, last_name, email, note)
-		@@id += 1
-
-		@contacts << contactend
+	def save(contact)
+	contact.id = @id
+	@contacts << contact     
+		# (first_name, last_name, email, note)
+		# contact = Contact.new(@@id, first_name, last_name, email, note)
+		@id += 1
 	end
 
 		def all 
-			@contacts
+			@contacts << contact
 		end
 	end
